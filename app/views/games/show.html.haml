@@ -1,0 +1,8 @@
+.container
+  %h1.text-2xl.mb-3= @game.name
+  
+  %h2.text-xl.mb-2 Teilnehmende:
+
+  - @game.participants.each do |participant|
+    %div
+      = link_to participant.name, participant

@@ -1,0 +1,14 @@
+.container
+  %h1.text-2xl.mb-3 Create new Game
+
+  = form_with model: @game do |f|
+    .grid.grid-cols-2.gap-3
+      = f.label :name
+      = f.text_field :name
+
+      = f.label :participant_names
+      = f.text_area :participant_names
+
+      %div
+      %div
+        = f.submit class: 'bg-lime-500 rounded-md px-2 py-1 text-white cursor-pointer'
