@@ -1,4 +1,6 @@
-%container
+.container.text-center
   %h1.text-2xl.mb-5 Du kaufst ein Geschenk für...
 
-  %p.text-3xl= @participant.receiver.name
+  .border-2.border-white.rounded-md.p-2
+    .transition-opacity.duration-300.ease-in-out.opacity-0.hover:opacity-100
+      %p.text-3xl= @participant.receiver.name

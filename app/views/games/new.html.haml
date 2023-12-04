@@ -4,10 +4,10 @@
   = form_with model: @game do |f|
     .grid.grid-cols-2.gap-3
       = f.label :name
-      = f.text_field :name
+      = f.text_field :name, class: 'text-black'
 
       = f.label :participant_names
-      = f.text_area :participant_names
+      = f.text_area :participant_names, class: 'text-black'
 
       %div
       %div
