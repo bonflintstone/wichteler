@@ -13,6 +13,7 @@ gem "sqlite3"
 gem "sprockets-rails"
 gem "stimulus-rails"
 gem "tailwindcss-rails"
+gem "thruster", require: false
 gem "turbo-rails"
 
 group :development, :test do
