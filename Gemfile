@@ -2,12 +2,14 @@ source "https://rubygems.org"
 ruby "3.2.2"
 
 gem "bootsnap", require: false
+gem "dotenv-rails", "~> 3.1"
 gem "haml-rails"
 gem "importmap-rails"
 gem "jbuilder"
-gem "pg", "~> 1.1"
+gem "kamal", "~> 2.3", require: false
 gem "puma", ">= 5.0"
-gem "rails", "~> 7.1.2"
+gem "rails", "~> 8"
+gem "sqlite3"
 gem "sprockets-rails"
 gem "stimulus-rails"
 gem "tailwindcss-rails"
